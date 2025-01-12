@@ -3,7 +3,7 @@
 ## Preparation
 
 ### 1. Create a `.env` File
-Add the following environment variables in the `.env` file:
+Rename sample-env to `.env` and add the following environment variables in the `.env` file:
 
 - `POSTGRES_USER`   
 - `POSTGRES_PASSWORD`   

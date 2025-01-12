@@ -1,0 +1,4 @@
+RENT_ALIAS = "RENT"
+RENT_VALUE = "Rent"
+SALE_ALIAS = "SALE"
+SALE_VALUE = "Sale"

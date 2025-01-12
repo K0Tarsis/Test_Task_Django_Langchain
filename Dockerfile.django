@@ -1,0 +1,25 @@
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+RUN apt-get update && apt-get install -y \
+    libpq-dev gcc && \
+    apt-get clean
+
+RUN apt-get update && apt-get install -y wget gnupg && \
+    wget -q -O google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
+    apt-get install -y ./google-chrome-stable_current_amd64.deb || apt-get -f install -y && \
+    rm google-chrome-stable_current_amd64.deb && \
+    apt-get clean
+
+WORKDIR /app
+
+COPY requirements/django.txt /app/
+RUN pip install --no-cache-dir -r django.txt
+
+COPY ./django_bot /app/django_bot
+
+EXPOSE 8000
+
+CMD ["python", "django_bot/manage.py", "runserver", "0.0.0.0:8000"]

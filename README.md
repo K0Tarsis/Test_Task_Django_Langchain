@@ -19,9 +19,8 @@ Only the `OPENAI_API_KEY` is required.
 
 ---
 
-### 2. Build and Start the Application
-Build and start the application using Docker:
-
+### 2. Build and Start the Application  
+Run in project directory:
 ```bash
 docker-compose up --build
 ```

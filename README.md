@@ -8,14 +8,8 @@ Rename sample-env to `.env` and add the following environment variables in the `
 - `POSTGRES_USER`   
 - `POSTGRES_PASSWORD`   
 - `POSTGRES_DB` 
-- `POSTGRES_PORT`   
-- `POSTGRES_HOST`   
+- `POSTGRES_PORT`    
 - `OPENAI_API_KEY`   
-- `DJANGO_HOST`   
-- `CELERY_BROKER_URL`   
-
-**Note:**  
-Only the `OPENAI_API_KEY` is required.
 
 ---
 

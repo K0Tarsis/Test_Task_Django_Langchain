@@ -45,3 +45,14 @@ The project integrates several technologies for data scraping and background pro
 
 ### Permissions:
 All API endpoints have permissions set to `AllowAny` to simplify testing during development.
+
+## Images:
+
+### Streamlit
+![Streamlit Image 1](images/streamlit1.png "Streamlit")
+
+![Streamlit Image 2](images/streamlit2.png "Streamlit")
+
+### Swagger
+
+![Swagger Image](images/swagger.png "Swagger")

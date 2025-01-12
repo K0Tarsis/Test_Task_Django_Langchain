@@ -1,4 +1,3 @@
-from django.db.models import ForeignKey
 from rest_framework import serializers
 from .models import Homes, ChatMessage, Chat
 
